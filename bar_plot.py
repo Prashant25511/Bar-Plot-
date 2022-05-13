@@ -25,6 +25,7 @@ plt.xticks(bar1+0.3, x, fontname='Times New Roman', fontsize = 12)
 plt.xlabel("Different Physical Parameters", fontname='Times New Roman', fontsize = 14)
 plt.ylabel("Respective Values", fontname='Times New Roman', fontsize = 14)
 
+//Add values for each parameter
 for i in range(len(x)):
 	plt.text(i, External_Wall[i], External_Wall[i], ha="center", va="bottom", fontsize = 7)
 	plt.text(i+w, Roof[i], Roof[i], ha="center", va="bottom", fontsize = 7)
@@ -36,6 +37,5 @@ for i in range(len(x)):
 
 plt.legend()
 plt.title('Comparison of Two Different Houses', fontname='Times New Roman', fontsize = 18, weight = 'bold')
-
 plt.show()
 
